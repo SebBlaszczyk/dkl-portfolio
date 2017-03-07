@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - David K.Le</title>
+</head>
+<body class="home">
+    <header>
+        <span class="logo">David K.Le</span>
+        <span>Contact</span>
+    </header>
+    <section class="main-content">
+        @RenderBody()
+    </section>
+    <footer>
+        <span>2017&copy; </span>
+        <span>Full website coming soon...</span>
+        <span>Instagram</span>
+    </footer>
+     @RenderSection("scripts", required: false)
+</body>
+</html>
