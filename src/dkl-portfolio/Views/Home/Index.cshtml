@@ -1,6 +1,41 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "David K Le | 2017";
     Layout = "_Holding";
 }
-
-<h2>Slider</h2>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <div class="slide-prev">Prev</div>
+        </div>
+        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide single-banner" data-slidetitle1="Caption 1">
+                        <div class="flex-box-parent">
+                            <div class="flex-box">
+                                <div class="square" style="background-image:url('http://4kwallpaper.org/wp-content/uploads/2016/12/national-geographic-wallpaper4.jpg');"></div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="swiper-slide single-banner" data-slidetitle2="Caption 2">
+                        <div class="flex-box-parent">
+                            <div class="flex-box">
+                                <div class="square" style="background-image:url('http://ngm.nationalgeographic.com/2015/09/hkakabo-razi-climb/img/video-still.jpg');"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide single-banner" data-slidetitle3="Caption 3">
+                        <div class="flex-box-parent">
+                            <div class="flex-box">
+                                <div class="square" style="background-image:url('http://savin-it.com/images/2016/01/30/chasingriverscoloradousanationalgeographic.jpg');"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+            <div class="slide-next text-right">Next</div>
+        </div>
+    </div>
+</div>

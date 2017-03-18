@@ -3,21 +3,45 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - David K.Le</title>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="css/base.css" /> 
+    <link rel="stylesheet" href="css/styles.css" /> 
+    <link rel="stylesheet" href="css/swiper.css" /> 
 </head>
 <body class="home">
-    <header>
-        <span class="logo">David K.Le</span>
-        <span>Contact</span>
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2">
+                    <span class="logo inline-block">David K. Le</span>
+                </div>
+                <div class="col-xs-8 col-sm-4 col-md-8 col-lg-8">
+                    <div class="slide-count clearfix"></div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
+                    <div class="contact-link text-right">Contact</div>
+                </div>
+            </div>
+        </div>
     </header>
-    <section class="main-content">
+    <section class="main">
         @RenderBody()
     </section>
     <footer>
-        <span>2017&copy; </span>
-        <span>Full website coming soon...</span>
-        <span>Instagram</span>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                    <span class="footer-text footer-copyright inline-block">2017 &copy;</span>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                    <span class="footer-text inline-block">Full website coming soon...</span>
+                </div>
+                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                    <div class="footer-text text-right xs-text-left">Instagram</div>
+                </div>
+            </div>
+        </div>
     </footer>
-     @RenderSection("scripts", required: false)
+    <script src="~/js/load.js"></script>
 </body>
 </html>

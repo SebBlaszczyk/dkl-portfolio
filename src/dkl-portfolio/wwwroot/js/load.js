@@ -3,7 +3,6 @@ LazyLoad = function (e) { function t(t, n) { var s, c = e.createElement(t); for 
 
 LazyLoad.js('js/resources/jquery-3.1.1.min.js', function (e) {
 
-    console.log();
     j = jQuery.noConflict();
 
     LazyLoad.js('js/site.js', function () {
@@ -12,7 +11,7 @@ LazyLoad.js('js/resources/jquery-3.1.1.min.js', function (e) {
 
             // swipers
             if (j('.swiper-container').length) {
-                LazyLoad.js('js/resources/swiper.min.js', function (e) {
+                LazyLoad.js('js/resources/swiper.jquery.min.js', function (e) {
                     var swiper = new Swiper('.swiper-container', {
                         pagination: '.slide-count',
                         nextButton: '.slide-next',
@@ -23,7 +22,7 @@ LazyLoad.js('js/resources/jquery-3.1.1.min.js', function (e) {
                         paginationCustomRender: function (swiper, current, total) {
                             var slideTitle = 'slidetitle' + current;
                             var title = document.querySelector('.swiper-slide-active').dataset[slideTitle];
-                            return title + ' - ' + current + ' of the custom total ' + total;
+                            return '<span class="slide-track-title">Projects - ' + title + '</span><span class="slide-track-count">' + current + '/' + total + '</span>';
                         }
                     });
                 });

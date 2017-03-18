@@ -1,1 +1,1 @@
-﻿var site = {}
+﻿var site = {};
